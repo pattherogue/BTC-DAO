@@ -1,0 +1,18 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: governance
+            expected-sender: STBESZX4XD1E26S0QKW7M5R2B699DQKJ81R3HEVE
+            cost: 26810
+            path: contracts/governance.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "2.1"

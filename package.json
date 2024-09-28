@@ -12,6 +12,9 @@
   "dependencies": {
     "@stacks/connect": "^7.7.1",
     "@stacks/network": "^6.16.0",
-    "@stacks/transactions": "^6.16.1"
+    "@stacks/transactions": "^6.16.1",
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   }
 }
